@@ -31,7 +31,7 @@ def clean_text(text):
     return text.strip()
 
 
-def chunk_text(text, chunk_size=500, overlap=50):
+def chunk_text(text, chunk_size=100, overlap=20):
     text = clean_text(text)
     chunks = []
     start = 0
@@ -192,3 +192,4 @@ if __name__ == "__main__":
             print("\n🤖 NIM:", ask_nim(question))
 
     print("✅ Goodbye!")
+
